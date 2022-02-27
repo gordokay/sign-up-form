@@ -11,12 +11,12 @@
 <body>
     <div class="graphics">
         <figure>
-            <img src="" alt="" class="background-image">
-            <figcaption></figcaption>
+            <img src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" class="background-image">
+            <figcaption>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></figcaption>
         </figure>
         <div class="logo">
-            <img src="" alt="" class="logo-image">
-            <p class="logo-text"></p>
+            <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" class="logo-image">
+            <p class="logo-text">Odin</p>
         </div>
     </div>
     <div class="content">
@@ -27,17 +27,17 @@
             <p class="form-header"></p>
             <form action="" method="POST" id="sign-up-form">
                 <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name">
+                <input type="text" name="first-name" id="first-name" required>
                 <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name">
+                <input type="text" name="last-name" id="last-name" required>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
                 <label for="phone-number">Phone Number</label>
                 <input type="tel" name="phone-number" id="phone-number">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" class="error" required>
                 <label for="password-confirm">Confirm Password</label>
-                <input type="password" name="password-confirm" id="password-confirm">
+                <input type="password" name="password-confirm" id="password-confirm" class="error" required>
             </form>
         </div>
         <button class="form-button" type="submit" form="sign-up-form">Create Account</button>
