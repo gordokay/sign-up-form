@@ -25,11 +25,22 @@
         </p>
         <div class="form-content">
             <p class="form-header"></p>
-            <form action="">
-
+            <form action="" method="POST" id="sign-up-form">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" name="phone-number" id="phone-number">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <label for="password-confirm">Confirm Password</label>
+                <input type="password" name="password-confirm" id="password-confirm">
             </form>
         </div>
-        <button class="form-button"></button>
+        <button class="form-button" type="submit" form="sign-up-form">Create Account</button>
         <p class="login-link"></p>
     </div>
 </body>
