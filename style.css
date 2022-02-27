@@ -116,7 +116,7 @@ input:focus{
     border: 1px solid red;
 }
 
-label[for="password"]::after{
+.error-label::after{
     text-transform: none;
     content: "* Passwords do not match";
     display: block;
