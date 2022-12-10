@@ -97,12 +97,6 @@ input {
   border: 1px solid #e5e7eb;
 }
 
-input:focus {
-  outline: none;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
-  border: 1px solid #4ecdc4;
-}
-
 span {
   position: relative;
 }
@@ -123,6 +117,25 @@ input:valid + span::before {
 
 input:invalid {
   border: 1px solid #f75c03;
+}
+
+span.no-match::after {
+  position: absolute;
+  content: 'Passwords do not match';
+  color: #f75c03;
+  font-size: 0.7em;
+  display: block;
+  transform: translateY(-24px);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid #4ecdc4;
+}
+
+input.indeterminate {
+  border: 1px solid #e5e7eb;
 }
 
 em {
@@ -165,4 +178,5 @@ button {
   border: none;
   border-radius: 0.25em;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
