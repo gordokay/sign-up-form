@@ -8,7 +8,7 @@
   <title>Sign-up form</title>
 </head>
 <body>
-  <div>
+  <div class="sidebar">
     <div class="logo">
       <img src="odin-lined.png" alt="Odin logo">
       <p>Odin</p>
@@ -17,32 +17,52 @@
       <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com">Unsplash</a></p>
     </div>
   </div>
-  <div>
-    <p>This is not a real online service! You know you need something like this in your life to help you
-      realize your deepest dreams. Sign up <em>now</em> to get started.
-    </p>
-    <p>You <em>know</em> you want to.</p>
+  <div class="content">
+    <div class="cta">
+      <p>This is not a real online service! You know you need something like this in your life to help you
+        realize your deepest dreams. Sign up <em>now</em> to get started.
+      </p>
+      <p>You <em>know</em> you want to.</p>
+    </div>
+    <div class="form">
+      <p>Let's do this!</p>
+      <form action="" method="post" id="sign-up">
+        <div>
+          <label for="first-name">First name</label>
+          <input type="text" name="first-name" id="first-name" required>
+          <span></span>
+        </div>
+        <div>
+          <label for="">Last name</label>
+          <input type="text" name="last-name" id="last-name" required>
+          <span></span>
+        </div>
+        <div>
+          <label for="">Email</label>
+          <input type="email" name="email" id="email" required>
+          <span></span>
+        </div>
+        <div>
+          <label for="">Phone number</label>
+          <input type="tel" name="phone-number" id="phone-number" required>
+          <span></span>
+        </div>
+        <div>
+          <label for="">Password</label>
+          <input type="password" name="password" id="password" required>
+          <span></span>
+        </div>
+        <div>
+          <label for="">Confirm password</label>
+          <input type="password" name="password-confirm" id="password-confirm" required>
+          <span></span>
+        </div>
+      </form>
+    </div>
+    <div>
+      <button type="submit" form="sign-up">Create account</button>
+    </div>
+    <p>Already have an account? <a href="#">Log in</a></p>
   </div>
-  <form action="" method="post" id="sign-up">
-    <label for="first-name">First name</label>
-    <input type="text" name="first-name" id="first-name" required>
-
-    <label for="">Last name</label>
-    <input type="text" name="last-name" id="last-name" required>
-
-    <label for="">Email</label>
-    <input type="email" name="email" id="email" required>
-
-    <label for="">Phone number</label>
-    <input type="tel" name="phone-number" id="phone-number" required>
-
-    <label for="">Password</label>
-    <input type="password" name="password" id="password" required>
-
-    <label for="">Confirm password</label>
-    <input type="password" name="password-confirm" id="password-confirm" required>
-  </form>
-  <button type="submit" form="sign-up">Create account</button>
-  <p>Already have an account? <a href="#">Log in</a></p>
 </body>
 </html>

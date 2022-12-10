@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@font-face {
+  font-family: Norse;
+  font-weight: bold;
+  src: url(Norse-Bold.otf);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url('plant.jpg');
+  background-size: cover;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logo img {
+  width: 20%;
+  height: auto;
+}
+
+.logo p {
+  font-family: 'Norse', serif;
+  font-size: 4rem;
+  color: white;
+}
+
+.credits {
+  color: white;
+  align-self: flex-end;
+  font-size: 0.8rem;
+}
+
+.credits a:link,
+.credits a:visited {
+  color: white;
+}
+
+.content {
+  background-color: #f8faff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.content > * {
+  width: 75%;
+  padding-left: 2rem;
+}
+
+.form {
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-top: 1px #e5e7eb;
+}
+
+#sign-up {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sign-up > div {
+  flex: 1 0 50%;
+}
+
+input {
+  width: 75%;
+  height: 2em;
+  margin-bottom: 1.5em;
+  border-radius: 0.25em;
+  border: 1px solid #e5e7eb;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid #4ecdc4;
+}
+
+span {
+  position: relative;
+}
+
+input:valid {
+  border: 1px solid #596d48;
+}
+
+input:valid + span::before {
+  position: absolute;
+  transform: translate(2px, 4px);
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url('valid.svg');
+  background-size: cover;
+}
+
+input:invalid {
+  border: 1px solid #f75c03;
+}
+
+em {
+  font-style: italic;
+}
+
+.cta{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.cta p + p {
+  margin-top: 2rem;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.25ch;
+}
+
+.form > p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 1.25rem 0;
+}
+
+.content a {
+  font-weight: bold;
+  color: #596d48;
+  text-decoration: none;
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  padding: 0.75em 2em;
+  background-color: #596d48;
+  border: none;
+  border-radius: 0.25em;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
